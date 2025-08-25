@@ -1,0 +1,45 @@
+# PCAMPO control formulario Avalonia
+
+Proyecto de práctica con **Avalonia UI** para aprender y experimentar con controles de formularios en .NET.
+
+---
+
+## 🚀 Requisitos
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) o superior
+- [Avalonia Templates](https://github.com/AvaloniaUI/avalonia-dotnet-templates) instalados:
+
+```bash
+dotnet new install Avalonia.Templates
+
+dotnet new avalonia.app -n MiProyectoAvalonia
+
+```
+
+- Un editor de código como [Visual Studio](https://visualstudio.microsoft.com/) o [Visual Studio Code](https://code.visualstudio.com/).
+
+### Corregir el error
+
+Si al crear el proyecto con Avalonia te aparece un error relacionado con `Avalonia.Desktop` o `Avalonia.Controls`, puedes solucionarlo actualizando los paquetes NuGet del proyecto. Abre una terminal en la carpeta del proyecto y ejecuta:
+
+```bash
+dotnet add package Avalonia.Desktop
+dotnet add package Avalonia.Controls
+```
+
+Luego, restaura los paquetes con:
+
+```bash
+dotnet restore
+```
+
+Abrir el proyecto con el editor e ir al archvio: YourProjectName.csproj y asegurarse de que las versiones de los paquetes son compatibles con la versión de .NET que estás utilizando. Puedes consultar la [documentación oficial de Avalonia](https://docs.avaloniaui.net/) para verificar las versiones recomendadas.
+<TargetFramework>net#.0</TargetFramework>
+
+Para verificar la versión de .NET instalada en tu sistema, puedes ejecutar:
+
+```bash
+dotnet --version
+```
+
+Reemplaza `#` con la versión de .NET que tienes instalada (por ejemplo, `net8.0`).
